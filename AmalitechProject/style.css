@@ -22,9 +22,22 @@ body{
     top: 0;
     z-index: 5; 
     border-radius: 0 0 0 90px;
-    
-}
 
+}
+.toggle-button{
+    height: 21px;
+    width: 50px;
+    border: 2px dotted rgb(255, 255, 255);
+    border-radius: 8px;
+}
+.sun-icon{
+    height: 21px;
+    width: 21px;
+}
+.moon-icon{
+    height: 21px;
+    width: 21px;
+}
 
 .devjobs-logo{
     font-family: k;
@@ -55,9 +68,7 @@ body{
     right: 15%;
     top: 90px; 
     z-index: 7;
-    border-radius: 5px;
-    
-    
+    border-radius: 5px;   
     
 }
 .company-filter{
@@ -105,6 +116,10 @@ body{
     cursor: pointer;
 
 }
+.search-icon{
+    width: 21px;
+    height: 21px;
+}
 
 .location-filter-search-box img{
     width: 30px;
@@ -126,6 +141,10 @@ body{
 
 }
 
+.location-icon{
+    width: 21px;
+    height: 21px;
+}
 /* styling check box */
 
 .fulltime-filter-check-box label{
@@ -154,7 +173,8 @@ body{
 } 
 
 .fulltime-filter-check-box input[type="checkbox"]:checked + label::before{
-    content: '\002714';
+    /* get correctcheck mark */
+    content: '\35000';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,12 +229,15 @@ body{
 .job-logo{
     width: 50px;
     height: 50px;
-    background-color: green;
+    /* background-color: green; */
     position:relative;
     z-index: 7;
     top: -25px;
     left: 30px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .font{
     color: #6E8098;
@@ -266,6 +289,7 @@ body{
     padding-bottom: 50px;
     
 } 
+
 .load-more{
     color: #FFFFFF;
     background-color:#5964E0;
@@ -274,11 +298,52 @@ body{
     border: 2px solid #5964E0;
     cursor: pointer;
     width: 94px;
-    height: 33px
-
+    height: 34px;
+}
+.load-more:hover{
+    background-color:#939BF4;
+    border: 2px solid #939BF4;
 }
 
+/* styling the svg images */
+.scoot{
+    background-color: green;
+}
 
+.blogr{
+    background-color: #E54D25
+}
+
+.vector{
+    background-color: #34353F;
+}
+.office-lite{
+    background-color: #2F4FC7;
+}
+.pod{
+    background-color: #132034;
+}
+.creative{
+    background-color: #4E1853;
+}
+.pomodoro{
+    background-color: #4722C6;
+}
+.maker{
+    background-color: #21427D;
+}
+.coffeeroasters{
+    background-color: #F2DECB;
+}
+.mastercaft{
+    background-color: #1F1F1F;
+}
+.crowdfund{
+    background-color: #37C790;
+}
+.typemaster{
+    background-color: #F16718;
+}
 
 
 /* change your styling units to relative units */
