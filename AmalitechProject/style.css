@@ -23,12 +23,46 @@ body{
     border-radius: 0 0 0 90px;
 
 }
-.toggle-button{
-    height: 21px;
-    width: 50px;
-    border: 2px dotted rgb(255, 255, 255);
-    border-radius: 8px;
-}
+/* style for toggle button  */
+.toggle-button {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-button input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    top: 2px;
+    background-color: #5964E0;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  input:checked + .slider:before {
+    background-color: #939BF4;
+    transform: translateX(19px);
+  }
+  
 .sun-icon{
     height: 21px;
     width: 21px;
@@ -500,3 +534,4 @@ ul li, ol li {
     font-weight: 400;
     margin-top: 5px;
 }
+
