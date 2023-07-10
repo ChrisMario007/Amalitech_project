@@ -2,14 +2,12 @@
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
-    
-
 }
 body{
     background: #F4F6F8;
     min-height: 100%;
-    /* position: relative; */
-    
+    font-family: "kumbh Sans" , sans-serif;
+
 }
 /* change nav bar comment in html to */
 .header{
@@ -18,9 +16,10 @@ body{
     justify-content: space-between;
     background: #939BF4;
     height: 120px; 
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 5; 
+    width: 100%;
+    z-index: 9; 
     border-radius: 0 0 0 90px;
 
 }
@@ -40,12 +39,9 @@ body{
 }
 
 .devjobs-logo{
-    font-family: k;
     margin-left: 14%;
     color: white;
     /* text-shadow: black 25px; */
-
-    
 }
 .mode{
     display: flex;
@@ -56,20 +52,22 @@ body{
     width: 28px;
 
 }
+
 /* the search and filtering section */
 .search{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: absolute;
+    position: fixed;
     background: #9DAEC2;
     height: 60px;
     width: 70%;
     right: 15%;
     top: 90px; 
-    z-index: 7;
-    border-radius: 5px;   
-    
+    z-index: 9;
+    border-radius: 5px;  
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+
 }
 .company-filter{
     height: 100%;
@@ -199,6 +197,7 @@ body{
 
 /* styling for the div containing job positions */
 .job-posts{
+    margin-top: 80px;
     position: absolute;
     width: 70%;
     padding-top: 50px;
@@ -214,7 +213,7 @@ body{
     right: 15%;
     /* justify-content: space-between; */
     align-items: center;
-    margin-top: 3%;
+    margin-top: 11%;
 }
 
 .general-box{
@@ -226,6 +225,7 @@ body{
     /* gap: 3rem; */
     /* margin: 20px; */
 }
+
 .job-logo{
     width: 50px;
     height: 50px;
@@ -238,6 +238,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .font{
     color: #6E8098;
@@ -252,9 +253,13 @@ body{
     margin-left: 30px;
     margin-top: 16px;
     margin-bottom: 17px;
-
+    font-weight: 700;
+    cursor: pointer;
 
 } 
+.postion-title:hover{
+    color: #6E8098;
+}
 .logo-type{
     margin-left: 30px;
     margin-bottom: 40px;
@@ -307,7 +312,7 @@ body{
 
 /* styling the svg images */
 .scoot{
-    background-color: green;
+    background-color: #E99210;
 }
 
 .blogr{
@@ -347,3 +352,151 @@ body{
 
 
 /* change your styling units to relative units */
+
+/* styling for the scoot page */
+.company-site{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    position: fixed;
+    background: #FFFFFF;
+    height: 140px;
+    width: 60%;
+    right: 15%;
+    top: 90px; 
+    z-index: 7;
+    border-radius: 6px; 
+    z-index: 9;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    /* border: 3px solid red; */
+}
+.company-site-logo{
+    background-color: #E99210;
+    width: 140px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px 0 0 6px;
+    
+}
+.svg-logo{
+    height: 30px;
+}
+.company-site-box{
+    width: 722px;
+    padding: 42px;
+    display: flex;
+    justify-content: space-between;
+}
+.site-button{
+    color: #5964E0;
+    font-weight: 700;
+    background-color: rgb(244, 246, 255);
+    padding: 3px 12px;
+    border-radius: 5px;
+    border: 2px solid #F4F6F8;
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
+    font-family: Kumbh Sans;
+}
+.site-button:hover{
+    /* set the right color for hover */
+    background-color: rgb(170, 179, 235) ;
+}
+.company-details{
+    position: absolute;
+    background: #FFFFFF;
+    /* height: 140px; */
+    width: 60%;
+    right: 15%;
+    top: 260px; 
+    z-index: 7;
+    border-radius: 6px;
+    padding: 45px 45px 0 45px; 
+    
+}
+.company-position{
+   position: relative;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+}
+.company-postion-title{
+    color: #19202D;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 13px;
+    
+}
+.font.company{
+    margin: 0;
+}
+.apply{
+    color: white;
+    font-weight: 700;
+    background-color:#5964E0;
+    padding: 3px 12px;
+    border-radius: 5px;
+    border: 2px solid #5964E0;
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
+    font-family: Kumbh Sans;
+}
+.apply:hover{
+    background-color: #939BF4;
+    border: #939BF4;;
+}
+.location.country{
+    margin-left: 0;
+    margin-top: 13px;
+    margin-bottom: 30px;
+}
+.info-styling{
+    font-size: 16px;
+    line-height: 26px;
+    color: #6E8098;
+}
+.requirement{
+    color: #19202D;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    margin-top: 40px;
+}
+ul, ol{
+    padding-left: 20px;
+}
+ul li, ol li {
+    padding-left: 10px; 
+    margin-bottom: 8px;
+  }
+.req-list{
+    padding-top: 23px;
+}
+.task-info{
+    margin-bottom: 30px;
+}
+.footer{
+   height: 50px;
+   width: 100%;
+   background-color:red;
+   /* z-index: 7; */
+   bottom:0 ;
+   position: fixed;
+
+}
+
+.company-name{
+    color: #19202D;
+    font-size: 24px;
+    font-weight: 700;
+}
+.company-website{
+    color: #6E8098;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+}
