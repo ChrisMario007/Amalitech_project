@@ -63,15 +63,6 @@ body{
     transform: translateX(19px);
   }
   
-.sun-icon{
-    height: 21px;
-    width: 21px;
-}
-.moon-icon{
-    height: 21px;
-    width: 21px;
-}
-
 .devjobs-logo{
     margin-left: 14%;
     color: white;
@@ -79,13 +70,18 @@ body{
 }
 .mode{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-right: 150px;
+    width: 100px;
 }
 .mode img{
-    width: 28px;
-
+    width: 15px;
 }
+/* .mode div{
+    margin-left: 20px;
+    margin-right: 20px;
+} */
 
 /* the search and filtering section */
 .search{
