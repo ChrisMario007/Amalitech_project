@@ -539,7 +539,7 @@ ul li::before{
 
 }
 .footer-content[
-    
+    width: 70%; 
 ]
 .company-name{
     color: #19202D;
