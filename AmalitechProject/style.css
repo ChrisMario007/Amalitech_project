@@ -534,7 +534,10 @@ ul li, ol li {
 }
 
 /* dark mode css */
-.general-box.dark-mode {
-    /* Add the dark mode color here */
-    background-color: #19202D;
-}
+.dark-mode .general-box {
+    /* background: red; */
+  }
+   .dark-mode body{
+    background: #121721;
+   }
+  
