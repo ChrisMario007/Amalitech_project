@@ -6,6 +6,7 @@
 body{
     background: #F4F6F8;
     min-height: 100%;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-family: "kumbh Sans" , sans-serif;
 
 }
@@ -97,6 +98,7 @@ body{
     z-index: 9;
     border-radius: 5px;  
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    font-family: "kumbh Sans" , sans-serif;
 
 }
 .company-filter{
@@ -531,3 +533,8 @@ ul li, ol li {
     margin-top: 5px;
 }
 
+/* dark mode css */
+.general-box.dark-mode {
+    /* Add the dark mode color here */
+    background-color: #19202D;
+}
