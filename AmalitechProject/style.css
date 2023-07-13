@@ -500,11 +500,27 @@ body{
 }
 ul, ol{
     padding-left: 20px;
+
 }
+
+
 ul li, ol li {
     padding-left: 10px; 
     margin-bottom: 8px;
   }
+/* styling for color of unordered list */
+ul{
+    list-style: none;
+}
+ul li::before{
+    content: "\2022";
+    color: #5964E0;
+    font-size: 20px;
+    font-weight: 700;
+    display: inline-block; 
+    margin-right: 19px;
+
+}
 .req-list{
     padding-top: 23px;
 }
@@ -512,15 +528,19 @@ ul li, ol li {
     margin-bottom: 30px;
 }
 .footer{
-   height: 50px;
+    height: 90px;
    width: 100%;
    background-color:red;
    /* z-index: 7; */
    bottom:0 ;
-   position: fixed;
+   /* margin-top: 500px; */
+   top: 1550px;
+   position: absolute;
 
 }
-
+.footer-content[
+    
+]
 .company-name{
     color: #19202D;
     font-size: 24px;
@@ -534,10 +554,65 @@ ul li, ol li {
 }
 
 /* dark mode css */
+.dark-mode .search{
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.1);
+}
 .dark-mode .general-box {
-    /* background: red; */
+    background-color: #19202D;
+    color: white;
   }
-   .dark-mode body{
-    background: #121721;
+.dark-mode .company-filter{
+    background-color: #19202D;
+    color: #FFFFFF;
+  }
+
+.dark-mode .location-filter{
+    background-color: #19202D;
+    color: #FFFFFF;
+  }
+.dark-mode .fulltime-filter{
+    background-color: #19202D;
+    color: #FFFFFF;
+}
+
+.dark-mode body{
+    background-color: #121721;
    }
+   
+/* Checkbox Hover Styles in Dark Mode */
+.dark-mode .fulltime-filter input[type="checkbox"] + label::before {
+    border-color: #34353F;
+    background-color: #34353F;
+  }
+
+.dark-mode .fulltime-filter input[type="checkbox"]:checked + label::before {
+    /* your checked checkbox styles in dark mode here */
+    border-color: #5964E0;
+    background-color: #5964E0;
+  }
+ 
+  /* dark mode for scoot */
+.dark-mode .company-site-box {
+    background-color: #19202D;
+  }
+  
+.dark-mode .company-details {
+    background-color: #19202D;
+  }
+.dark-mode .company-site{
+    background-color: #19202D;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.1);
+}
+.dark-mode .company-site-button button {
+    background-color: #34353F;
+    border: 2px solid #34353F;
+    color: #FFFFFF;
+  }
+.dark-mode .company-name, .dark-mode .company-postion-title, .dark-mode .requirement, .dark-mode .task {
+    color: #FFFFFF;
+}
+.dark-mode .company-site-button button:hover {
+    background-color: #494f56;
+    border: 2px solid #494f56;
+  }
   
