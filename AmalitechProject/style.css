@@ -78,10 +78,7 @@ body{
 .mode img{
     width: 15px;
 }
-/* .mode div{
-    margin-left: 20px;
-    margin-right: 20px;
-} */
+
 
 /* the search and filtering section */
 .search{
@@ -202,16 +199,7 @@ body{
     background-color: #939BF4;     
 } 
 
-/* .fulltime-filter-check-box input[type="checkbox"]:checked + label::before{ */
-    /* get correctcheck mark */
-    /* content: '\35000';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5964E0;
-    color: #FFFFFF;
-}
-  */
+
 
   .fulltime-filter-check-box input[type="checkbox"]:checked + label::before {
     content: "";
@@ -252,16 +240,12 @@ input {
     width: 70%;
     padding-top: 50px;
     padding-bottom: 50px;
-    /* background-color: red; */
-    /* display: flex; */
     display: grid;
     grid-template-columns: repeat(3, 315px);
     grid-auto-rows: 280px;
     column-gap: 30px;
-    /* flex-wrap: wrap; */
     opacity: 5;
     right: 15%;
-    /* justify-content: space-between; */
     align-items: center;
     margin-top: 11%;
 }
@@ -272,8 +256,7 @@ input {
     background-color: white;
     border-radius: 5px;
     opacity: 6;
-    /* gap: 3rem; */
-    /* margin: 20px; */
+
 }
 
 .position-link {
@@ -288,7 +271,6 @@ input {
 .job-logo{
     width: 50px;
     height: 50px;
-    /* background-color: green; */
     position:relative;
     z-index: 7;
     top: -25px;
@@ -408,13 +390,12 @@ input {
 }
 
 
-/* change your styling units to relative units */
+/* remeber to change your styling units to relative units */
 
 /* styling for the scoot page */
 .company-site{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     position: fixed;
     background: #FFFFFF;
     height: 140px;
@@ -425,7 +406,6 @@ input {
     border-radius: 6px; 
     z-index: 9;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-    /* border: 3px solid red; */
 }
 .company-site-logo{
     background-color: #E99210;
@@ -465,7 +445,6 @@ input {
 .company-details{
     position: absolute;
     background: #FFFFFF;
-    /* height: 140px; */
     width: 60%;
     right: 15%;
     top: 260px; 
