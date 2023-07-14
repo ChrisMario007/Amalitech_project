@@ -6,7 +6,6 @@
 body{
     background: #F4F6F8;
     min-height: 100%;
-    /* font-family: 'Courier New', Courier, monospace; */
     font-family: "kumbh Sans" , sans-serif;
 
 }
@@ -515,12 +514,17 @@ ul{
 ul li::before{
     content: "\2022";
     color: #5964E0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
     display: inline-block; 
-    margin-right: 19px;
+    margin-right: 19 px;
+    
 
 }
+ol li::marker {
+    color: #5964E0;
+  }
+  
 .req-list{
     padding-top: 23px;
 }
@@ -529,18 +533,39 @@ ul li::before{
 }
 .footer{
     height: 90px;
-   width: 100%;
-   background-color:red;
-   /* z-index: 7; */
-   bottom:0 ;
-   /* margin-top: 500px; */
-   top: 1550px;
-   position: absolute;
+    width: 100%;
+    background-color:#FFFFFF;
+    /* z-index: 7; */
+    bottom:0 ;
+    /* margin-top: 500px; */
+    top: 1550px;
+    position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 
 }
-.footer-content[
-    width: 70%; 
-]
+.footer-content-holder{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin-left: 140px;
+}
+/* .footer-content{
+    background-color: #37C790;
+
+} */
+.footer-name{
+    color: #19202D;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.inc{
+    color: #6E8098;
+    font-size: 16px;
+    font-weight: 400;
+}
 .company-name{
     color: #19202D;
     font-size: 24px;
@@ -615,4 +640,9 @@ ul li::before{
     background-color: #494f56;
     border: 2px solid #494f56;
   }
-  
+.dark-mode .footer{
+    background-color: #19202D;
+}
+.dark-mode .footer-name{
+    color: #FFFFFF;
+}
